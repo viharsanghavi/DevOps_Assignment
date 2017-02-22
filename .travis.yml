@@ -5,4 +5,4 @@ android:
     - android-18
     - extra
 script: ./gradlew build 
-before_script: - chmod +x gradlew
+
