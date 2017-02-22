@@ -10,3 +10,10 @@ android:
     - 'android-sdk-preview-license-52d11cd2'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "https://github.com/viharsanghavi/DevOps_Assignment.git"
+  skip_cleanup: true
+  on:
+    tags: true
