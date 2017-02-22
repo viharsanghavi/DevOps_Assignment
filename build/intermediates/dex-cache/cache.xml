@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_bf45d4564fce65ddcb7fd87cfa35b4c46c3731aa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_8b05c54b63e12430e5c4615e5a968cbf6f70b950\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6192804599d6e79833e4a07221d22306da15f601">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3b958f6c8337cdeae91d8fa0db4c65d55da8e6b7\classes.dex" />
+    </item>
+    <item
+        jar="D:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_0b5b7c2eab8afef5a0d4f84f4adb566bc4c58e7d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_49c8bc2a6514aa08ed432ee2ecb902aa8755fb9c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_6ec034be6bc8b9a5bf90e95f769ee65a418625c2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_5825b5bab67ee3105aa76bc018cfe1b8913cca21\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6816cfcd1075080f8f6b550e81352e26547db867">
+        <dex dex="C:\Users\vihar\AndroidStudioProjects\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_85869ff3c923a1a43b1dae70f23f6d4399d04425\classes.dex" />
+    </item>
+
+</items>
