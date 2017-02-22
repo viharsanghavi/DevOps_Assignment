@@ -4,6 +4,6 @@ android:
     - build-tools-18.1.1
     - android-18
     - extra
-script: ./gradlew
+script: ./gradle/wrapper
 before_install:
  - chmod +x gradlew
