@@ -1,49 +1,23 @@
+language: android 
+jdk: oraclejdk8 
+sudo: false 
 
-# Check Android SDK tools: http://developer.android.com/tools/sdk/tools-notes.html
-# Check Android SDK Platform-tools: http://developer.android.com/tools/revisions/platforms.html
-tools
-platform-tools
-
-# Check BuildTools: http://developer.android.com/tools/revisions/build-tools.html
-build-tools-23.0.1
-
-# The API to be used to compile
-# Check APIs: http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels
-
-android-23
-android-22
-android-21
-android-20
-android-19
-android-18
-android-17
-android-16
-....
-
-# The system images if you need to run emulator during your tests
-
-sys-img-armeabi-v7a-android-23
-sys-img-x86-android-23
-....
-
-# Google repository from which download the dependencies
-
-# Check extras: http://developer.android.com/sdk/installing/adding-packages.html#GetSupportLib
-extra-android-m2repository
-extra-android-support
-
-# Check more extras: http://developer.android.com/sdk/installing/adding-packages.html#GetGoogle
-extra-google-m2repository
-extra-google-google_play_services
-
-extra-google-admob_ads_sdk
-extra-google-analytics_sdk_v2
-extra-google-gcm
-extra-google-google_play_services_froyo
-.....
-
-# Source file
-source-23
-source-22
-source-21
-
+ android: 
+  components: 
+     - platform-tools 
+     - tools 
+     - build-tools-24.0.2 
+     - android-22 
+     - android-24 
+     - sys-img-armeabi-v7a-android-22 
+     - extra-android-m2repository 
+ 
+before_script: 
+   # Create and start emulator 
+   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a 
+   - emulator -avd test -no-skin -no-audio -no-window & 
+   - android-wait-for-emulator 
+   - adb shell input keyevent 82 & 
+ 
+ 
+ script: ./gradlew connectedAndroidTest 
