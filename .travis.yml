@@ -14,6 +14,6 @@ language: android
     - extra-android-m2repository  
  
 
- script: gradlew build 
+ script: ./gradlew build 
  before_install:
  - chmod +x gradlew
