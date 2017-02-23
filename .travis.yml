@@ -2,36 +2,22 @@ language: android
 sudo: false
 android:
   components:
-    - build-tools-23.0.1
-    - android-23
-    - extra
-    - compileSdkVersion-23
-
+  - build-tools-23.0.1
+  - android-23
+  - extra
+  - compileSdkVersion-23
 before_install:
-  - chmod +x gradlew
-
-
+- chmod +x gradlew
 before_script:
-  - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
-  - emulator -avd test -no-skin -no-audio -no-window &
-  - android-wait-for-emulator
-  - adb shell input keyevent 82 &
-
+- echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
+- emulator -avd test -no-skin -no-audio -no-window &
+- android-wait-for-emulator
+- adb shell input keyevent 82 &
 deploy:
   provider: releases
   api_key:
-    secure: "HXo4tvb0Irftx78WcP8FxQxT22P52hpKNHyKqQ3wHz9z2yd3Rd+2IW8bfLTf1Bga86XQxoeWNvJFeXc1FZNfK/Ee1MTmvK6KISrb8wacSUQoMp7eiddsn7fQVtdxag0awFn9wpHk/pQNKO855/GzClPWkBRx6O0BqdN+U0I0FFm1zD+6Sz6AxoDUUL/0qYXtfwj59uLpbwIofvoEv5XQ1FQBGfKDzsjAk+l6MBQilS3cKqViEn9anx+/TwsyeFxlHUisSWYTwFBBYLXHaRSFtvyj1lOmSmpDJtpWQbwWenHBbDrsCPSUiceu+kDv6myEiayOh+MHyNHuKftp++JW0gmdaWyaS8Bm1SY1RHcGH6iFqUMNlWSH4DfS02TtIIYBsiL+qMl5x2LIfFBg5qulQ0WzRdos5bGsfvzApR6Uiomg+mqqwhmJxHpLWqre5hmOBv6dqdk3CQAQME1k3N4sEJTNmhsFMxqjcwpqCUMbt3k8YLDHU9glKqS8Cl3fWGe3GEVOV5dM1k+6ytrxYp/Mm26cwFaBcCEgL3+n/5v/cm+wc8sKCRC2Oxblr79+uPQ0L+pETmpIs6vAq32YQnP14Ygy5T2dgUHq2ub7eYemhPfgb0OaJlHtEBS0//EqRF1v6Kg7EdiOd1ja1WMlqZVcIIlkZanETgwdZn5aOTeCZyM="
-  file: ./app/build/outputs/apk/app-release-unsigned.apk
-  file_glob: "true"
+    secure: Ln7PPc7Kx4Cc/S2RNHRM7N34ak2R4BWip+XnzXBFnKM0PGlWQP//LvWqqfVWM2L6wst+FcQ0aQ6iJcFNJsQwZFvI2yz1MuG/Z8bjNcRR9u1f6j1i5fJLEK4LlO2Pn4/RqZIGioYH2c1TxP6VagmA/8dTggp7koOJkrjaWe3pESU0UAIOST6TtwBd5NNL0AM711hQaHylI1RPNwHcWNp2JwB40W1iQQeatS/9vh6Ht8kpifOuxRrR0Q6n6umdPvkWevQS2qUy+6ggszIkOtZ0uTkd8Gb5lPXWu43VrKOkyiDDw9V6y4XzoUN7Y6qkNeMqrM+7YEybZvHmAeF2L06I4zzrgBlkoNjNAx/UjNP6yBU0iHz/POC9PGNBd67PvuM1wbcjPet2Rz5a88ym538+mYUQNMoiU/XZITafUNhUnccTd5vQSDSJV2R+5VI4Nr9YsaPJfsiBF+ZqcWQ3gyWpiXglw9c3mf5TQhjI4etvLfyM/bF7TEbgaqTX2On0TVk8zKslF+Cb+2dfjCOmIbWo7VxAWSbR0srzkZdAYUuUulHN58zgwba5j5pg81mj/c53XvOUkvWpP+JMhr1LLH33iK2Clv6bp0Y9Wipw5xTR1iDQ/e+GMxeSJDheYM8CXehKoS/Q3vGNOxsXhz7HhiDZXrSpRS/Qkzu6hZLbDI7QHcA=
+  file: "./app/build/outputs/apk/app-release-unsigned.apk"
   skip_cleanup: true
   on:
-    branch: master
     repo: viharsanghavi/DevOps_Assignment
-
- 
-
-
-
-
-
-
