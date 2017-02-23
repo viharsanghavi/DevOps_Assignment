@@ -16,6 +16,18 @@ before_script:
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
 
+  deploy: 
+    provider: releases 
+    file: TravisExample.apk^M 
+    skip_cleanup: true 
+
+  on: 
+    repo: viharsanghavi/DevOps_Assignment
+    tags: true 
+    jdk: oraclejdk8  
+    api_key: 
+    secure: "50fb8f7fbcada06686562e7c35eea5bc4b9ccbe1 
+
 
 
 
