@@ -10,9 +10,8 @@ android:
 before_install:
   - chmod +x gradlew
 
-after_success:
+  after_success:
 - sh set_tags.sh
-
 
 before_script:
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
@@ -22,9 +21,9 @@ before_script:
 
 deploy:
   provider: releases
-  username: "viharsanghavi"
-  password: "home1996"
-  file: "build/Calculator*release*.apk"
+  api_key:
+    secure: "deba8f27332271c2f6b57e40647e2216d83cb002"
+  file: "build/outputs/apk/Calculator*release*.apk"
   file_glob: "true"
   skip_cleanup: true
   on:
