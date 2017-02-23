@@ -10,8 +10,8 @@ android:
 before_install:
   - chmod +x gradlew
 
-  after_success:
-- sh set_tags.sh
+after_success:
+  - sh set_tags.sh
 
 before_script:
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
@@ -23,7 +23,6 @@ deploy:
   provider: releases
   api_key:
     secure: "deba8f27332271c2f6b57e40647e2216d83cb002"
- 
   skip_cleanup: true
   on:
     branch: master
