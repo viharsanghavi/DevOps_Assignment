@@ -1,7 +1,7 @@
 language: android
 android:
   components:
-    - build-tools-23.0.3
+    - build-tools-23.0.1
     - android-23
     - extra
     - compileSdkVersion-23
@@ -9,3 +9,9 @@ android:
 
 before_install:
  - chmod +x gradlew
+
+ deploy: 
+   provider: releases 
+   file: TravisExample.apk 
+   skip_cleanup: true 
+
