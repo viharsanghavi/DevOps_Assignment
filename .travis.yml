@@ -26,16 +26,16 @@ before_deploy:
  
  
  deploy: 
-   provider: releases 
-   file: TravisExample.apk 
-   skip_cleanup: true 
+   provider -releases 
+   file -TravisExample.apk 
+   skip_cleanup -true 
  
    on: 
-     repo: viharsanghavi/DevOps_Assignment
-     tags: true 
-     jdk: oraclejdk8 
+     repo -viharsanghavi/DevOps_Assignment
+     tags -true 
+     jdk -oraclejdk8 
    api_key: 
-     secure: "60031ea2174f9491b1c68c64c3cef02bf1b34a4b"
+     secure -"60031ea2174f9491b1c68c64c3cef02bf1b34a4b"
 
 
 
