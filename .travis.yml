@@ -21,7 +21,7 @@ deploy:
   provider: releases
   api_key:
     secure: "HXo4tvb0Irftx78WcP8FxQxT22P52hpKNHyKqQ3wHz9z2yd3Rd+2IW8bfLTf1Bga86XQxoeWNvJFeXc1FZNfK/Ee1MTmvK6KISrb8wacSUQoMp7eiddsn7fQVtdxag0awFn9wpHk/pQNKO855/GzClPWkBRx6O0BqdN+U0I0FFm1zD+6Sz6AxoDUUL/0qYXtfwj59uLpbwIofvoEv5XQ1FQBGfKDzsjAk+l6MBQilS3cKqViEn9anx+/TwsyeFxlHUisSWYTwFBBYLXHaRSFtvyj1lOmSmpDJtpWQbwWenHBbDrsCPSUiceu+kDv6myEiayOh+MHyNHuKftp++JW0gmdaWyaS8Bm1SY1RHcGH6iFqUMNlWSH4DfS02TtIIYBsiL+qMl5x2LIfFBg5qulQ0WzRdos5bGsfvzApR6Uiomg+mqqwhmJxHpLWqre5hmOBv6dqdk3CQAQME1k3N4sEJTNmhsFMxqjcwpqCUMbt3k8YLDHU9glKqS8Cl3fWGe3GEVOV5dM1k+6ytrxYp/Mm26cwFaBcCEgL3+n/5v/cm+wc8sKCRC2Oxblr79+uPQ0L+pETmpIs6vAq32YQnP14Ygy5T2dgUHq2ub7eYemhPfgb0OaJlHtEBS0//EqRF1v6Kg7EdiOd1ja1WMlqZVcIIlkZanETgwdZn5aOTeCZyM="
-  file: "/app/build/outputs/apk/app-release-unsigned.apk"
+  file: ./app/build/outputs/apk/app-release-unsigned.apk
   file_glob: "true"
   skip_cleanup: true
   on:
