@@ -10,8 +10,4 @@ android:
 before_install:
  - chmod +x gradlew
 
- deploy: 
-   provider: releases 
-   file: TravisExample.apk 
-   skip_cleanup: true 
 
