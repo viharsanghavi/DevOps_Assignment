@@ -21,10 +21,10 @@ before_script:
 
 deploy:
   provider: releases
-  user: "viharsanghavi"
-  password: "home1996"
-   api_key: "60031ea2174f9491b1c68c64c3cef02bf1b34a4b"
-  file: "Calculator.apk"
+  user: viharsanghavi
+  password: home1996
+   api_key: 60031ea2174f9491b1c68c64c3cef02bf1b34a4b
+  file: Calculator.apk
   skip_cleanup: true
   on:
     tags: true
