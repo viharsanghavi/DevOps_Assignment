@@ -22,8 +22,8 @@ before_script:
 
 deploy:
   provider: releases
-  username:viharsanghavi
-  password:home1996
+  username: "viharsanghavi"
+  password: "home1996"
   file: "build/Calculator*release*.apk"
   file_glob: "true"
   skip_cleanup: true
