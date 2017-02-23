@@ -8,33 +8,22 @@ android:
 
 
 before_install:
- - chmod +x gradlew
+  - chmod +x gradlew
 
  env:
   global:
-    # install timeout in minutes (2 minutes by default)
     - ADB_INSTALL_TIMEOUT=8
 
-# Emulator Management: Create, Start and Wait
 before_script:
   - echo no | android create avd --force --name test --target android-23 --abi armeabi-v7a
   - emulator -avd test -no-skin -no-audio -no-window -gpu off
   - android-wait-for-emulator
   - adb devices
-  - adb shell input keyevent 82 &
+  - adb shell input keyevent 82
 
 script:
   - echo $ADB_INSTALL_TIMEOUT
   - android list target
   - ./gradlew connectedAndroidTest
 
-after_failure:
-  # Customize this line, 'android' is the specific app module name of this project. Shows log.
-  - export MY_MOD="SimpleLock"
-  - export MY_LOG_DIR="$(pwd)/app/build/reports/androidTests/connected/"
-  - pwd && cd "${MY_LOG_DIR:-.}" && pwd && ls -al
-  - sudo apt-get install -qq lynx && lynx --dump index.html > myIndex.log
-  - lynx --dump com.android.builder.testing.ConnectedDevice.html > myConnectedDevice.log
-  - lynx --dump com.android.builder.testing.html > myTesting.log
-  - for file in *.log; do echo "$file"; echo "====================="; cat "$file"; done || true
 
