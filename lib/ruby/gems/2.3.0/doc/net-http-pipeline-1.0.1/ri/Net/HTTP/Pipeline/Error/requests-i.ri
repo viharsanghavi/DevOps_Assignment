@@ -1,2 +1,0 @@
-U:RDoc::Attr[iI"requests:ETI"(Net::HTTP::Pipeline::Error#requests;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"BRemaining requests that have not been sent to the HTTP server;T:
-@fileI"lib/net/http/pipeline.rb;T:0@omit_headings_from_table_of_contents_below0F@I"Net::HTTP::Pipeline::Error;TcRDoc::NormalClass0
